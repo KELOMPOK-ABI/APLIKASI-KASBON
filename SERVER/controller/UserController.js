@@ -1,5 +1,5 @@
-class RincianController {
-    static getRincians(req,res){
+class UserController {
+    static getUsers(req,res){
 
     }
     static info(req,res){
@@ -16,4 +16,4 @@ class RincianController {
     }
 }
 
-module.exports= RincianController
+module.exports= UserController

@@ -5,12 +5,12 @@ route.get('/', (req,res) => {
         message: "Home page"
     })
 })
-const kasbonRoutes = require('./kasbon')
-const tambahRoutes =require('./tambah')
-const rincianRoutes =require('./rincian')
 
-route.use('/kasbons', kasbonRoutes  )
-route.use('/tambahs', tambahRoutes)
-route.use('/rincians', rincianRoutes )
+const kasbonRoutes = require('./kasbon')
+const userRoutes =require('./user')
+
+route.use('/kasbons', kasbonRoutes)
+route.use('/users', userRoutes )
 
 module.exports=route
+
